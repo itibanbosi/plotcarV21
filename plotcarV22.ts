@@ -613,7 +613,7 @@ namespace eureka_plotter_car {
         for (let i = 0; i < 2; i++) {
             // send
             basic.pause(5);
-            pins.setPull(DigitalPin.P16, PinPullMode.PullNone);
+            pins.setPull(DigitalPin.P2, PinPullMode.PullNone);
             pins.digitalWritePin(DigitalPin.P2, 0);
             control.waitMicros(2);
             pins.digitalWritePin(DigitalPin.P2, 1);
@@ -626,13 +626,13 @@ namespace eureka_plotter_car {
         return Math.round(Math.idiv(d2 / 2, 58) * 1.5);
     }
 
-
+/*
     //% color="#009A00" weight=21 blockId=sonar_ping_LED block="きょりを表示（確認のみ）" group="6 超音波きょりｾﾝｻｰ"
     //% advanced=true
     export function sonar_ping_LED() {
         basic.showNumber(sonar_ping_2());
     }
-
+*/
 
 
 
@@ -648,7 +648,7 @@ namespace eureka_plotter_car {
         for (let i = 0; i < 2; i++) {
             // send
             basic.pause(5);
-            pins.setPull(DigitalPin.P16, PinPullMode.PullNone);
+            pins.setPull(DigitalPin.P2, PinPullMode.PullNone);
             pins.digitalWritePin(DigitalPin.P2, 0);
             control.waitMicros(2);
             pins.digitalWritePin(DigitalPin.P2, 1);
@@ -830,13 +830,13 @@ namespace eureka_plotter_car {
 
     }
 
-
+/*
     //% color="#228b22"  weight=16 blockId=microbit2_denkiLED block="m:bit光ｾﾝｻの値表示（確認のみ）" group="8 microbitの光ｾﾝｻ"
     //% advanced=true
     export function microbit2_denkiLED() {
         basic.showNumber(Math.round(input.lightLevel() / 254 * 100));
     }
-
+*/
 
 
 
